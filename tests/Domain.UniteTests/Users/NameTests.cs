@@ -28,6 +28,6 @@ public class NameTests
         //Arrange
         Name Action() => new(value);
 
-        Assert.ThrowsAny<ArgumentException>(Action);        
+        Assert.ThrowsAny<ArgumentException>(Action);
     }
 }

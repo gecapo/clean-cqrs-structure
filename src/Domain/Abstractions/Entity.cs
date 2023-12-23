@@ -8,6 +8,8 @@ public abstract class Entity
         Id = id;
     }
 
+    protected Entity() { }
+
     protected void RaiseEvent(IDomainEvent domainEvent) => _domainEvents.Add(domainEvent);
     public List<IDomainEvent> DomainEvents => _domainEvents.ToList();
 

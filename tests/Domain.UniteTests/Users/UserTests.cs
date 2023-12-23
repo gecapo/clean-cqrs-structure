@@ -9,9 +9,10 @@ public class UserTests
     {
         //Arrange
         Name name = new("gecapo");
+        Email email = new("gecapo@gmail.com");
 
         //Act
-        User user = User.Create(name);
+        User user = User.Create(email, name);
 
         //Asert
         Assert.NotNull(user);
@@ -22,9 +23,10 @@ public class UserTests
     {
         //Arrange
         Name name = new("gecapo");
+        Email email = new("gecapo@gmail.com");
 
         //Act
-        User user = User.Create(name);
+        User user = User.Create(email, name);
 
         //Asert
         Assert.Single(user.DomainEvents);

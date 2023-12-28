@@ -13,6 +13,9 @@ public sealed class User : Entity
 
     public Name Name { get; private set; }
     public Email Email { get; private set; }
+
+    public bool IsPublic { get; private set; }
+
     public DateTime CreatedOn { get; private set; }
 
     public static User Create(Email email, Name name)
